@@ -6,6 +6,12 @@ then
 	exit 1
 fi
 
+if [[ ${#} -lt 1 ]]
+then 
+	echo "USAGE: ${0} USER_NAME COMMENT..." 
+	exit 1
+fi 
+
 USER_NAME=${1}
 
 shift
